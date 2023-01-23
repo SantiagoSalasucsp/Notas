@@ -1,10 +1,10 @@
 class Estructuras{
 public:
-Escala mayor{}
-EscalaMenor{}
-intervalos{}
-Conversor{}
-MenorArmonica{}
+Estructuras(int array,int pos)
+void EscalaMayor(){}
+void EscalaMenor(){}
+void intervalos(){}
+MenorArmonica(){}
 MenorMelodica{}
 Cromatica{}
 EscalaTonosEnteros{}
