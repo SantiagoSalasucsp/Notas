@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iostream>
 using namespace std;
 
 void nota1(int x);
@@ -17,5 +18,5 @@ void estructura(char array[],int tam){
 };
 
 int main() {
- char array[11]={"Do","Do#","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol"};
+ string array[11]={"Do","Do#","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol"};
 }
