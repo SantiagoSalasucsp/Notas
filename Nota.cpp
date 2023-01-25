@@ -78,5 +78,5 @@ cout<<endl;
 EscalaMayor(notas,7);
 cout<<endl;
 EscalaMenor(notas,4);
-  
+ 
   }
