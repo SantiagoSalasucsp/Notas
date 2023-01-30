@@ -5,46 +5,19 @@ class Estructuras{
 public:
 
 
+Estructuras(string*no,int posi,int tama);
 
-Estructuras(string* note,int _pos ){
-  notas=note;
-  pos=_pos;
-}
+void tono (int x);
+void semitono(int y);
 
-Estructuras(string arr[], int pos,int tam=24){
-  this->tam = tam;
-    notas = new string[tam];
+void EscalaMayor();
+
+
+void print() {
+    cout << "[ ";
     for(int i = 0; i < tam; i++)
-        notas[i] = arr[i];
-}
-
-
-int tono (){
-  return 2;
-}
-int semitono(){
-  return 1;
-}
-
-void EscalaMayor(){  
-  int k=pos;
-  cout<<notas[k]<<endl;
-  k+=tono();
-  cout<<notas[k]<<endl;
-  k+=tono();
-  cout<<notas[k]<<endl;
-  k+=semitono();
-  cout<<notas[k]<<endl;
-  k+=tono();
-  cout<<notas[k]<<endl;
-  k+=tono();
-  cout<<notas[k]<<endl;
-  k+=tono();
-  cout<<notas[k]<<endl;
-  k+=semitono();
-  cout<<notas[pos]<<endl;
-
-  
+        cout << notas[i] << " ";
+    cout << "]" <<endl;
 }
 
 void EscalaMenor();
@@ -58,7 +31,8 @@ void Pentatonica();
 void PentatonicaMenor();
 
 private:
-string *notas;//[]={"Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si","Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si"};
+string*notas;
+//[]={"Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si","Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si"};
 int pos;
 int tam=24;
 
@@ -66,9 +40,3 @@ int tam=24;
 };
 
 
-int tono (){
-  return 2;
-}
-int semitono(){
-  return 1;
-}
