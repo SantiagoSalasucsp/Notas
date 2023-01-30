@@ -1,5 +1,6 @@
 #include <iostream>
-#include <iostream>
+#include <string>
+#include "Estructuras.h"
 using namespace std;
 
 int tono(string array[],int posi){
@@ -64,10 +65,7 @@ int main() {
  string notas[]={"Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si","Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si"};
 
 
-for (i=0; i<12; i++) {
-cout<<notas[i]<<endl;}
-  if(i==12)
-    {i-=12;}
+
   
   
 cout<<endl;
@@ -75,8 +73,16 @@ cout<<endl;
 cout<<endl;
 cout<<endl;
 
-EscalaMayor(notas,7);
-cout<<endl;
-EscalaMenor(notas,4);
+//EscalaMayor(notas,7);
+//cout<<endl;
+//EscalaMenor(notas,4);
+string* nota;
+nota=notas;
+Estructuras e1(nota,0,24);
+
+e1.EscalaMayor();
+
+
+
  
   }
