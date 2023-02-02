@@ -1,45 +1,34 @@
 #include <iostream>
-#include <iostream>
+#include <string>
 using namespace std;
+
 class Estructuras{
 public:
-Estructuras(string arr[],int);
-int tono(string array[],int posi);
-int semitono(string array[],int posi);
-void EscalaMayor();
-void EscalaMenor();
-void intervalos();
-void Conversor();
-void MenorArmonica();
-void MenorMelodica();
-void Cromatica();
-void EscalaTonosEnteros();
-void Pentatonica();
-void PentatonicaMenor();
-
-private:
-string arr[];
-int pos;
 
 
-};
+  Estructuras(string* nota,int posi,int tama);
 
-void EscalaMayor(string arr[],int pos){
-  int k=pos;
-  cout<<arr[k]<<endl;
-  k+=tono(arr,pos);
-  cout<<arr[k]<<endl;
-  k+=tono(arr,pos);
-  cout<<arr[k]<<endl;
-  k+=semitono(arr,pos);
-  cout<<arr[k]<<endl;
-  k+=tono(arr,pos);
-  cout<<arr[k]<<endl;
-  k+=tono(arr,pos);
-  cout<<arr[k]<<endl;
-  k+=tono(arr,pos);
-  cout<<arr[k]<<endl;
-  k+=semitono(arr,pos);
-  cout<<arr[pos]<<endl;
+  void derecha(int&);
+  void tono (int&);
+  void semitono(int&);
+  void EscalaMayor();
+  void print();
+  void EscalaMenor();
+  void intervalos();
+  void Conversor();
+  void dorica();
+  void frigia();
+  void Cromatica();
+  void lidia();
+  void lidiaAumentada();
+  void PentatonicaMenor();
+
+protected:
+  string*notas;
+  //[]=      {"Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si","Do","Do#/Reb","Re","Re#/Mib","Mi","Fa","Fa#/Solb","Sol","Sol#/Lab","La","La#/Sib","Si"};
+  int pos;
+  int tam=11;
+
+
 
 };
